@@ -1,4 +1,8 @@
+local Enabled = true
+
 while wait(2) do
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Checkpoints.201.Part.CFrame
-	game:GetService("ReplicatedStorage").Events.RebirthDo:FireServer(true)
+	if Enabled == true then 
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Checkpoints[201].Part.CFrame
+		game:GetService("ReplicatedStorage").Events.RebirthDo:FireServer(true)
+	end
 end
