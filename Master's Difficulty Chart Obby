@@ -1,0 +1,4 @@
+while wait(10) do
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Checkpoints.201.Part.CFrame
+	game:GetService("ReplicatedStorage").Events.RebirthDo:FireServer(true)
+end
